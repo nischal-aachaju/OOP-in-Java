@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class GuessingGame {
 
+    static int i=0;
     public static void main(String[] args) {
         int number=(int)(Math.random()*100);
         System.out.println(number);
@@ -9,7 +10,7 @@ public class GuessingGame {
             System.out.println("Byee");
         }
         else{
-            System.out.printf("You guess it. The number is %d",ans);
+            System.out.printf("You guess it in %d try. The number is %d",Counter(i)-1,ans);
         }
     }
     public static int Counter(int i) {
@@ -19,7 +20,7 @@ public class GuessingGame {
     public static int numberGueser(int number) {
         int numGuess;
         Scanner scanner=new Scanner(System.in);
-        int i=0;
+        
         while (true) {
             
             System.out.print("Enter number between 0 to 100:");

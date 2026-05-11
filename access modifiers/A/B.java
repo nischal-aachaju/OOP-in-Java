@@ -4,11 +4,11 @@ public class B {
     private String name;
     private int age;
 
-    private void display(){
-        System.out.println(name+" b");
-        System.out.println(age);
+    //  void display(){
+    //     System.out.println(name+" b");
+    //     System.out.println(age);
 
-    }
+    // }
 }
 class C{
     public static void main(String[] args) {

@@ -2,14 +2,23 @@ import java.util.ArrayList;
 
 public class StackUsingArrayList {
     ArrayList<Integer> list = new ArrayList<>();
+    
 
     public void push(int value){
         list.add(value);
     }
     public int pop(){
+        if (isEmpty()){
+            System.out.println("Stack empty");
+            return -1;
+        }
         return list.remove(list.size()-1);
     }
     public int peek(){
+        if (isEmpty()){
+            System.out.println("Stack empty");
+            return -1;
+        }
         return list.get(list.size()-1);
     }
     public boolean isEmpty(){

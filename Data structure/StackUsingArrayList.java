@@ -2,7 +2,10 @@ import java.util.ArrayList;
 
 public class StackUsingArrayList {
     ArrayList<Integer> list = new ArrayList<>();
-    
+
+    public boolean isEmpty(){
+        return list.isEmpty();
+    }
 
     public void push(int value){
         list.add(value);
@@ -21,9 +24,7 @@ public class StackUsingArrayList {
         }
         return list.get(list.size()-1);
     }
-    public boolean isEmpty(){
-        return list.isEmpty();
-    }
+
 
 }
 class MainStackMethodArrayList{

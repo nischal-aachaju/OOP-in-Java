@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class StackUsingArrayList {
-    ArrayList<Integer> list = new ArrayList<>();
-
+    // ArrayList<Integer> list = new ArrayList<>();
+  ArrayList<Integer> list = new ArrayList();
     public boolean isEmpty(){
         return list.isEmpty();
     }

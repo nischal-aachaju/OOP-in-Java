@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 abstract class Polygon{
 String shapeName;
 
@@ -54,12 +57,24 @@ class Rectangle extends  Polygon{
 
 public class ShapeMain {
   public static void main(String[] args) {
+    ArrayList <Object> arrShape=new ArrayList<>();
     Triangle t=new Triangle("tra",  20, 30, 50);
     Squares s=new Squares(4,"sqr");
     Rectangle r=new Rectangle("rec",    2, 4);
-System.out.println(   " "+ t.calculatePerimeter()+
-    s.calculatePerimeter()+
-    r.calculatePerimeter());
+// System.out.println(   " "+ t.calculatePerimeter()+
+//     s.calculatePerimeter()+
+//     r.calculatePerimeter());
 
-  }  
+arrShape.add(t);
+arrShape.add(s);
+arrShape.add(r);
+
+// for(Object e:arrShape){
+//     int val=
+// }
+//   }  
+    Object x= (arrShape.get(arrShape.size()-1)).getClass();
+    x.calculatePerimeter();
+    
+  }
 }

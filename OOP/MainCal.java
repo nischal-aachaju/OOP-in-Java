@@ -6,10 +6,14 @@ class CalculationExample{
     int sum(int a,int b,int c){
         return a+b+c;
     }
-    
+    double sum(int a,float  b,int c,int d){
+        return a+b+c+d;
+    }
     double sum(double a,int b){
         return a+b;
     }
+
+
 }
 
 class MainCal{
